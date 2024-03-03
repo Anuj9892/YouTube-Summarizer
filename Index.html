@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+     @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #233d45;
+  --primary-color-dark: #141420;
+  --secondary-color: #daad18;
+  --secondary-colorrr: #f1e579;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.header__container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+nav {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo a {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  position: relative;
+  padding-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color-dark);
+}
+
+.link a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.link a:hover::after {
+  width: 100%;
+}
+
+.header__content {
+  padding: 5rem 0;
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.banner__1 {
+  max-width: 400px;
+  margin-left: 5rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color-dark);
+  background-color: var(--white);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  margin: 1rem;
+}
+.btn:hover{
+  background-color: var(--secondary-colorrr);
+  
+}
+
+.header__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: calc(50% - 5rem);
+  padding-top: 6rem;
+  background-color: var(--white);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.header__image img {
+  width: 100%;
+  display: flex;
+  max-width: 600px;
+}
+
+.header__socials {
+  right: 0;
+  top: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.header__socials span a {
+  font-size: 2rem;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.header__socials span:hover a {
+  color: var(--secondary-color);
+}
+
+.types__container {
+  background-color: var(--primary-color-dark);
+}
+
+.types__grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.types__card {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.types__card h4 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.types__card p {
+  padding-bottom: 1rem;
+  color: var(--white);
+  border-bottom: 5px solid var(--primary-color);
+}
+    </style>
+    <title>Summarizer</title>
+  </head>
+  <body>
+    <header class="header__container">
+      <nav>
+        <div class="nav__logo"><a href="#">THE ERRORS</a></div>
+        <ul class="nav__links">
+          <li class="link"><a href="#">Home</a></li>
+          <li class="link"><a href="Explore.html">Explore</a></li>
+          <li class="link"><a href="About_Us.html">About Us</a></li>
+          <li class="link"><a href="Contact_Us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__content">
+        <h1>Summarizer</h1>
+        <h2>Classify your need</h2>
+        <div class="banner__1">
+          Popular for exploring new content
+        </div>
+        <li class="link"><a href="YT3.py">SUMMARIZE</a></li>
+      </div>
+      <div class="header__image">
+        <img src="MIT-AI-Trust-01-PRESS.png" alt="header" />
+      </div>
+      <div class="header__socials">
+        <!--span-->
+      </div>
+    </header>
+    <section class="types__container">
+      <div class="types__grid">
+        <div class="types__card">
+          <h4>1.</h4>
+          <p>
+            Our summarizer convert complex video in quick ready to go notes
+          </p>
+        </div>
+        <div class="types__card">
+          <h4>2.</h4>
+          <p>
+            Quick,Easy and handy concept
+          </p>
+        </div>
+        <div class="types__card">
+          <h4>3.</h4>
+          <p>
+            Time Saving and efficient
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
